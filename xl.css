@@ -1,0 +1,104 @@
+hr {
+  margin: 30px auto;
+  width: 300px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+/* 顶部导航栏 */
+.container {
+  width: 100%;
+  height: 100%;
+  /*溢出y轴保留滚动条，x轴隐藏滚动条*/
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /*放在父级上，沿着y轴滑动 */
+  scroll-snap-type: y mandatory;
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  background: #41578a7d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.navbar li {
+  list-style: none;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase color #fff654;
+}
+.navbar li a:hover {
+  color: #ffef41;
+}
+/*内容*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  /*放在子元素上，和上面那个父元素一伙的*/
+  scroll-snap-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex1 {
+  flex: 1;
+}
+.content {
+  flex: content;
+}
+h3 {
+  margin-bottom: 15px;
+}
+.a {
+  background-image: url(https://xlll111.github.io/about-xl/);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.b {
+  background-image: url(https://xlll111.github.io/xl/8iM40.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.c {
+  background-image: url(https://xlll111.github.io/about-xl/);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.d {
+  background-image: url(https://xlll111.github.io/about-xl/);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media (max-width: 600px) {
+  .ce {
+    display: none;
+  }
+}
